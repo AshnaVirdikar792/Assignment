@@ -1,8 +1,6 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 30 13:20:06 2020
 
-@author: Ashna
+
+@author: Ashna Virdikar
 """
 
 #Duplicate values in dataset how to find them and remove them using pandas in python 
@@ -33,5 +31,5 @@ df.loc[df.duplicated(keep='last')]
 #check just for duplicates in a particular column
 df.duplicated(subset=['Salary']) 
 
-#To drop duplicate values -
+#To drop duplicate values 
 df.drop_duplicates(keep=False)
